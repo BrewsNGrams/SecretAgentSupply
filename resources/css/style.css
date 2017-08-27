@@ -1,60 +1,100 @@
 html {
+  background-color: white;
+  color: white;
   font-family: helvetica, sans-serif;
   font-size: 18px;
-  background-color: black;
-  font-weight: bold;
-  color: white;
+
 }
 
 .container {
-  display: flex;
-}
-
-body {
-  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 header {
-  align-self: center;
-  justify-content: flex-start;
-  text-align: left;
-  width: 960px;
-  padding: 0.66rem 0.5rem;
+  background-color: black;
 }
 
-header img {
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.container img {
   height: 1.5rem;
   padding-right: 1rem;
 }
 
-h1 {
-  color: white;
+ .container span {
   font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: normal;
 }
 
 .new_arrival_banner {
-  justify-content: flex-start;
-  align-items: center;
   height: 25rem;
   background-image: url(../../resources/imgs/moto.jpeg);
   background-position: center;
   background-size: cover;
 }
 
-nav {
-  justify-content: space-around;
-  align-items: center;
-  background-color: firebrick;
-  height: 2rem;
-  width: 100%;
+.new_arrival_box {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
 }
 
-a {
+h1, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+nav {
+  background-color: firebrick;
   color: white;
-  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
   font-weight: normal;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 4px solid black;
+  width: 30%;
+}
+
+.product img {
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.product h4 {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem 0;
 }
