@@ -6,6 +6,10 @@ html {
 
 }
 
+div {
+  display: block;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -132,7 +136,7 @@ footer {
 
 
 @media only screen and (max-width: 1024px) {
-  body {
+  html {
     font-size: 16px;
   }
 
@@ -155,5 +159,51 @@ footer {
 
   .info {
     width: 35%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .new_arrival_banner {
+    height: 15rem;
+  }
+
+  .new_arrival_box {
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .new_arrival_box h4 {
+    font-size: 0.77rem;
+  }
+
+  .new_arrival_box h1 {
+    font-size: 1rem;
+  }
+
+  .products {
+    justify-content: space-around;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .glasses, .watch {
+    display: none;
+  }
+
+  .business_info  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    align-self: center;
+    padding: 0.5rem 0;
+    width: 90%;
+  }
+
+  footer {
+    text-align: center;
   }
 }
